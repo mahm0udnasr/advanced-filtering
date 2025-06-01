@@ -18,7 +18,7 @@ A modern shoe store application with advanced filtering capabilities built with 
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/advanced-filtering.git
+git clone https://github.com/mahm0udnasr/advanced-filtering.git
 cd advanced-filtering
 ```
 
