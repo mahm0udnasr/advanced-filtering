@@ -1,15 +1,36 @@
+import Button from "../components/Button";
 import "./Recommended.css";
 
-const Recommended = () => {
+const Recommended = ({ handleButtonClick }) => {
   return (
     <div>
       <h2 className="recommended__title">Recommended</h2>
       <div className="recommended">
-        <button className="btns">All Products</button>
-        <button className="btns">Nike</button>
-        <button className="btns">Adidas</button>
-        <button className="btns">Puma</button>
-        <button className="btns">Vans</button>
+        <Button
+          onClickHandler={handleButtonClick}
+          value={""}
+          title={"All Products"}
+        />
+        <Button
+          onClickHandler={handleButtonClick}
+          value={"Nike"}
+          title={"Nike"}
+        />
+        <Button
+          onClickHandler={handleButtonClick}
+          value={"Adidas"}
+          title={"Adidas"}
+        />
+        <Button
+          onClickHandler={handleButtonClick}
+          value={"Puma"}
+          title={"Puma"}
+        />
+        <Button
+          onClickHandler={handleButtonClick}
+          value={"Vans"}
+          title={"Vans"}
+        />
       </div>
     </div>
   );

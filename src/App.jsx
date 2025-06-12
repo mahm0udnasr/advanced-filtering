@@ -44,7 +44,7 @@ function App() {
       );
     }
     return filteredProducts.map(
-      ({ img, title, star, reviews, prevPrice, newPrice }, index) => {
+      ({ img, title, star, reviews, prevPrice, newPrice }, index) => (
         <Product
           key={index}
           title={title}
@@ -53,16 +53,16 @@ function App() {
           reviews={reviews}
           prevPrice={prevPrice}
           newPrice={newPrice}
-        />;
-      }
+        />
+      )
     );
   }
   const products = filteredData(data, selectedCategory, query);
   return (
     <>
       <Sidebar handleRadioChange={handleRadioChange} />
-      <Navigation handleButtonClick={handleButtonClick}/>
-      <Recommended />
+      <Navigation query={query} handleInputChange={handleInputChange} />
+      <Recommended handleButtonClick={handleButtonClick} />
       <Products products={products} />
     </>
   );
